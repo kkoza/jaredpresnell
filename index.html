@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jared Presnell - Potter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Georgia, serif;
+            background-color: #f5f5f0;
+            color: #333;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 3em;
+            font-weight: normal;
+            margin-bottom: 60px;
+            letter-spacing: 2px;
+            text-transform: lowercase;
+        }
+        
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .gallery img {
+            max-width: 450px;
+            width: 100%;
+            height: auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .gallery {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>jared presnell, potter</h1>
+        
+        <div class="gallery">
+            <img src="images/DSC00405.JPG" alt="Handmade pottery vessel by Jared Presnell">
+            <img src="images/DSC00407.JPG" alt="Handmade pottery vessel by Jared Presnell">
+        </div>
+    </div>
+</body>
+</html>
