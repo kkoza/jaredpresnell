@@ -35,15 +35,57 @@
         .gallery {
             display: flex;
             justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
         }
         
-        .gallery img {
+        .image-container {
+            position: relative;
             max-width: 450px;
+            width: 100%;
+        }
+        
+        .image-container img {
             width: 100%;
             height: auto;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: opacity 0.3s ease;
+        }
+        
+        .image-container .image-top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+        
+        .image-container:hover .image-top {
+            opacity: 1;
+        }
+        
+        .contact {
+            margin-top: 80px;
+        }
+        
+        .contact h2 {
+            font-size: 1.5em;
+            font-weight: normal;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            text-transform: lowercase;
+        }
+        
+        .contact p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        
+        .contact a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact a:hover {
+            color: #666;
         }
         
         @media (max-width: 768px) {
@@ -62,8 +104,16 @@
         <h1>jared presnell, potter</h1>
         
         <div class="gallery">
-            <img src="images/DSC00405.JPG" alt="Handmade pottery vessel by Jared Presnell">
-            <img src="images/DSC00407.JPG" alt="Handmade pottery vessel by Jared Presnell">
+            <div class="image-container">
+                <img src="images/DSC00405.JPG" alt="Handmade pottery vessel by Jared Presnell" class="image-bottom">
+                <img src="images/DSC00407.JPG" alt="Handmade pottery vessel by Jared Presnell" class="image-top">
+            </div>
+        </div>
+        
+        <div class="contact">
+            <h2>contact</h2>
+            <p><a href="mailto:jared.presnell@gmail.com">jared.presnell@gmail.com</a></p>
+            <p><a href="tel:+12086101411">208 610 1411</a></p>
         </div>
     </div>
 </body>
